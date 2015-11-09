@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nycbg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fh1-2M-45q">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acronym Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkC-qI-bDM">
+                                <rect key="frame" x="150" y="50" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hgg-7l-X4B"/>
+                                    <constraint firstAttribute="width" constant="300" id="pFl-Yv-yHO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="30"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.41568627450980394" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the Acronym" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6tR-T2-H9E">
+                                <rect key="frame" x="200" y="125" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="16e-JN-umF"/>
+                                    <constraint firstAttribute="height" constant="30" id="PsW-Dz-MC3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noj-AG-YVo">
+                                <rect key="frame" x="210" y="175" width="60" height="40"/>
+                                <color key="backgroundColor" red="0.91414141414141403" green="0.50400925184155598" blue="0.44869760365791528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kgo-Ey-Bnu"/>
+                                    <constraint firstAttribute="width" constant="60" id="wmC-iJ-0IG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JdE-jo-hJV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAU-XC-0pi">
+                                <rect key="frame" x="330" y="175" width="60" height="40"/>
+                                <color key="backgroundColor" red="0.91414141410000005" green="0.5040092518" blue="0.4486976037" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Tej-mK-RxS"/>
+                                    <constraint firstAttribute="height" constant="40" id="VWF-gl-gPX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hft-ah-Puc"/>
+                                    <action selector="Submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIw-0B-JPF"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Jg4-ZH-rLY">
+                                <rect key="frame" x="134" y="240" width="331" height="340"/>
+                                <color key="backgroundColor" red="0.84981214030457264" green="0.94117647058823528" blue="0.86598320208854318" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="331" id="wiJ-dp-8fD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fh1-2M-45q" secondAttribute="height" multiplier="1:1" id="2Am-UT-5Uf"/>
+                            <constraint firstAttribute="centerX" secondItem="Jg4-ZH-rLY" secondAttribute="centerX" id="2ae-fb-kHs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jg4-ZH-rLY" secondAttribute="bottom" constant="20" id="5ky-hJ-k50"/>
+                            <constraint firstItem="Jg4-ZH-rLY" firstAttribute="top" secondItem="kAU-XC-0pi" secondAttribute="bottom" constant="25" id="9RZ-Za-3gX"/>
+                            <constraint firstAttribute="centerY" secondItem="fh1-2M-45q" secondAttribute="centerY" id="RBH-bx-Qbe"/>
+                            <constraint firstItem="6tR-T2-H9E" firstAttribute="top" secondItem="ZkC-qI-bDM" secondAttribute="bottom" constant="25" id="SqO-Og-S4n"/>
+                            <constraint firstAttribute="centerX" secondItem="fh1-2M-45q" secondAttribute="centerX" id="Yoh-gW-qBT"/>
+                            <constraint firstItem="kAU-XC-0pi" firstAttribute="centerY" secondItem="noj-AG-YVo" secondAttribute="centerY" id="aMd-2y-bIr"/>
+                            <constraint firstItem="ZkC-qI-bDM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="bva-LI-pyI"/>
+                            <constraint firstAttribute="centerX" secondItem="noj-AG-YVo" secondAttribute="centerX" constant="60" id="bxf-OF-y14"/>
+                            <constraint firstAttribute="centerX" secondItem="kAU-XC-0pi" secondAttribute="centerX" constant="-60" id="jjX-Mt-nAm"/>
+                            <constraint firstAttribute="height" secondItem="fh1-2M-45q" secondAttribute="height" id="pRz-MV-Aaq"/>
+                            <constraint firstItem="noj-AG-YVo" firstAttribute="top" secondItem="6tR-T2-H9E" secondAttribute="bottom" constant="20" id="qkX-Ha-nN5"/>
+                            <constraint firstAttribute="width" secondItem="fh1-2M-45q" secondAttribute="width" id="twl-rW-dRI"/>
+                            <constraint firstAttribute="centerX" secondItem="6tR-T2-H9E" secondAttribute="centerX" id="upF-9z-q5l"/>
+                            <constraint firstAttribute="centerX" secondItem="ZkC-qI-bDM" secondAttribute="centerX" id="ws3-wQ-Vwn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Am-UT-5Uf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="inputSearchTerm" destination="6tR-T2-H9E" id="LPu-6o-GrU"/>
+                        <outlet property="outputResults" destination="Jg4-ZH-rLY" id="Wub-ju-vms"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nycbg.jpg" width="750" height="1334"/>
+    </resources>
+</document>
