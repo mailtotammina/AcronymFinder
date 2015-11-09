@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F5D616066F8488D72EA1C90 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CD269BE76082E0ECCED330 /* libPods.a */; };
-		FB1441FB1BF06632008936B7 /* nycbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB1441FA1BF06632008936B7 /* nycbg.jpg */; };
+		FB728B461BF119A800E0014D /* nycbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB728B451BF119A800E0014D /* nycbg.jpg */; };
 		FBA946AF1BEC1EDD00A1C41E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA946AE1BEC1EDD00A1C41E /* main.m */; };
 		FBA946B21BEC1EDD00A1C41E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA946B11BEC1EDD00A1C41E /* AppDelegate.m */; };
 		FBA946B51BEC1EDD00A1C41E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA946B41BEC1EDD00A1C41E /* ViewController.m */; };
@@ -32,7 +32,7 @@
 		282A1603EDB50D2027F272E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		75CD269BE76082E0ECCED330 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D9889FF0354FBEAE69AF6A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		FB1441FA1BF06632008936B7 /* nycbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nycbg.jpg; path = ../../../../Desktop/nycbg.jpg; sourceTree = "<group>"; };
+		FB728B451BF119A800E0014D /* nycbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nycbg.jpg; sourceTree = "<group>"; };
 		FBA946A91BEC1EDD00A1C41E /* DictTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA946AD1BEC1EDD00A1C41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBA946AE1BEC1EDD00A1C41E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		FB1441F71BF0628C008936B7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				FB1441FA1BF06632008936B7 /* nycbg.jpg */,
+				FB728B451BF119A800E0014D /* nycbg.jpg */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 				FBA946BD1BEC1EDD00A1C41E /* LaunchScreen.xib in Resources */,
 				FBF0F5C51BF10C46004B2253 /* Main.storyboard in Resources */,
 				FBA946BA1BEC1EDD00A1C41E /* Images.xcassets in Resources */,
-				FB1441FB1BF06632008936B7 /* nycbg.jpg in Resources */,
+				FB728B461BF119A800E0014D /* nycbg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
